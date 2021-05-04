@@ -1,4 +1,4 @@
-//var fs = require('fs');
+var fs = require('fs');
 //var http = require('http');
 //var https = require('https');
 //var privateKey  = fs.readFileSync('./server.key', 'utf8');
@@ -12,8 +12,10 @@ var app = express();
 
 //comments up are for http/https server but we are without official certificate
 
-app.get('/', function(req, res){
-    res.send("Main page")
-})
+app.use(express.static("C:/Users/Utente/Desktop/repo/startup/FrontEnd"));
+
+app.get('/', function(req, res) {
+    res.sendFile('/index.html', {root: __dirname })
+});
 
 app.listen(8080, () => console.log(`Http server listening on 8080`));
