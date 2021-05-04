@@ -12,7 +12,7 @@ var app = express();
 
 //comments up are for http/https server but we are without official certificate
 
-app.get('/contactus', function(req, res){
+app.get('/', function(req, res){
     res.send("Main page")
 })
 
