@@ -12,10 +12,10 @@ var app = express();
 
 //comments up are for http/https server but we are without official certificate
 
-app.use(express.static("C:/Users/Utente/Desktop/repo/startup/FrontEnd"));
+app.use(express.static("./FrontEnd"));
 
 app.get('/', function(req, res) {
     res.sendFile('/index.html', {root: __dirname })
-});
-
+  });
+    
 app.listen(8080, () => console.log(`Http server listening on 8080`));
