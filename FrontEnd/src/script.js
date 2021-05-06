@@ -1,43 +1,25 @@
-/*!
-* Start Bootstrap - Scrolling Nav v4.3.0 (https://startbootstrap.com/template/scrolling-nav)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
-*/
-(function ($) {
-    "use strict"; // Start of use strict
+// BOTTONE BACK-TO-TOP
+          let mybutton = document.getElementById("btn-back-to-top");
 
-    // Smooth scrolling using anime.js
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
-        if (
-            location.pathname.replace(/^\//, "") ==
-            this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length ?
-                target :
-                $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-                anime({
-                    targets: 'html, body',
-                    scrollTop: target.offset().top - 56,
-                    duration: 1000,
-                    easing: 'easeInOutExpo'
-                });
-                return false;
+          // Quando l'utente scolla in giù di 20px dall'inizio del sito, il bottone compare
+          window.onscroll = function () {
+            scrollFunction();
+          };
+
+          function scrollFunction() {
+            if (
+              document.body.scrollTop > 20 ||
+              document.documentElement.scrollTop > 20
+            ) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
             }
-        }
-    });
+          }
+          // Quando l'utente clicca il bottone, scrollo in cima del sito
+          mybutton.addEventListener("click", backToTop);
 
-    // Closes responsive menu when a scroll trigger link is clicked
-    $(".js-scroll-trigger").on('click', function () {
-        $(".navbar-collapse").collapse("hide");
-    });
-
-    // Activate scrollspy to add active class to navbar items on scroll
-    $("body").scrollspy({
-        target: "#mainNav",
-        offset: 56,
-    });
-
-})(jQuery); // End of use strict
+          function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
