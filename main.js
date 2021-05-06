@@ -18,4 +18,4 @@ app.get('/', function(req, res) {
     res.sendFile('/index.html', {root: __dirname })
   });
     
-app.listen(8080, () => console.log(`Http server listening on 8080`));
+app.listen(3306, () => console.log(`Server listening on 3306`));
