@@ -1,15 +1,15 @@
 // BOTTONE BACK-TO-TOP
           let mybutton = document.getElementById("btn-back-to-top");
 
-          // Quando l'utente scrolla in giù di 20px dall'inizio del sito, il bottone compare
+          // Quando l'utente scolla in giù di 20px dall'inizio del sito, il bottone compare
           window.onscroll = function () {
             scrollFunction();
           };
 
           function scrollFunction() {
             if (
-              document.body.scrollTop > 20 ||
-              document.documentElement.scrollTop > 20
+              document.body.scrollTop > 100 ||
+              document.documentElement.scrollTop > 100
             ) {
               mybutton.style.display = "block";
             } else {
