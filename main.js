@@ -7,6 +7,7 @@ var fs = require('fs');
 //var credentials = {key: privateKey, cert: certificate};
 var express = require('express');
 var app = express();
+var port = 8080
 //var httpServer = http.createServer(app);
 //var httpsServer = https.createServer(credentials, app);
 
@@ -18,4 +19,4 @@ app.get('/', function(req, res) {
     res.sendFile('/index.html', {root: __dirname })
   });
     
-app.listen(3306, () => console.log(`Server listening on 3306`));
+app.listen(port, () => console.log(`Server listening on ${port}`));
