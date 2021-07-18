@@ -56,37 +56,16 @@
       <link rel="stylesheet" href="src/style.css" type="text/css">
   
       <script src="https://use.fontawesome.com/351be3174f.js"></script>
-  
-      
     </head>
   
     <!----------  BODY  ---------->
     <body>
-      <form action="sendmail.php" method ="post">
-        <div class="container">
-          <h2>Subscribe to our Newsletter</h2>
-          <p>Lorem ipsum..</p>
-        </div>
       
-        <div class="container" style="background-color:white">
-          <input type="text" placeholder="Name" name="name" required>
-          <input type="text" placeholder="Email address" name="mail" required>
-          <label>
-            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-          </label>
-        </div>
-      
-        <div class="container">
-          <input type="submit" value="Subscribe">
-        </div>
-      </form>
+    <?php include("templates/btt-button.php"); ?>
 
-      
-      
-      
-     
-  
-      <!----------  HEADER  ---------->
+    <?php include("templates/navbar.php"); ?>
+
+    <!----------  HEADER  ---------->
       <header>
         <div class="container-background">
           <div class="opacita-header">
@@ -98,17 +77,24 @@
       </header>
       
       <div class="spaziatore"></div>
-
       
-  
+      <form action="sendmail.php" method ="POST"> 
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Surname" name="surname" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+        </div>
+        <div class="container">
+          <input type="submit" value="submit" name = "submit">
+        </div>
+      </form>
       <!----------  CONTENUTO  ---------->
       <section class="content text-center">
         <div class="container-immagine-contenuto">
-          
         </div>
       </section>
+    <?php include("templates/footer.php"); ?>
      
-  
       <!----------  JS Scripts Bootstrap  ---------->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
       <!---------- Our Scripts  ---------->
