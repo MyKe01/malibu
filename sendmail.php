@@ -1,13 +1,136 @@
 <?php
-$to = $_POST["mail"];
-$subject = "Hello ".$_POST["name"]." from XAMPP!";
-$message = 'This is a test';
-$headers = "From: themodelist@gmail.com\r\n";
-if (mail($to, $subject, $message, $headers)) {
-   echo "SUCCESS";
-   header("Location: http://localhost/modelist");
-} else {
-   echo "ERROR";
-}
-exit();
+//display errors
+   $errors = array('email'=>'', 'submitted' =>'');
+
+   if(isset($_POST["submit"])){
+      $email = htmlspecialchars($_POST["mail"]);
+      $name = htmlspecialchars($_POST["name"]);
+      $surname = htmlspecialchars($_POST["surname"]);
+   
+//check email
+      if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+         $subject = "Hello ".$name." from The Modelist!";
+         $message = 'This is a test';
+         $headers = "From: gokuinstapage@gmail.com\r\n";
+         if (!mail($email, $subject, $message, $headers)) {
+            $errors["submitted"] = "ERROR";
+         }
+      }else{
+         $errors["email"] = "The email insert is not valid";
+      }
+      if(!array_filter($errors)){
+         header("Location : index.php");
+      }
+   }
 ?>
+
+<DOCTYPE html>
+  <html lang="it">
+    <!----------  HEAD  ---------->
+    <head>
+      <style>
+        /* Style the form element with a border around it */
+        form {
+          border: 4px solid #f1f1f1;
+        }
+
+        /* Add some padding and a grey background color to containers */
+        .container {
+          padding: 20px;
+          background-color: #f1f1f1;
+        }
+
+        /* Style the input elements and the submit button */
+        input[type=text], input[type=submit] {
+          width: 100%;
+          padding: 12px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+
+        /* Add margins to the checkbox */
+        input[type=checkbox] {
+          margin-top: 16px;
+        }
+
+        /* Style the submit button */
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          border: none;
+        }
+
+        input[type=submit]:hover {
+          opacity: 0.8;
+        }
+      </style>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <!----------  FavIcon e Title ---------->
+      <link rel="icon" type="image/x-icon" href="src/favicon/favicon.ico" />
+      <title>Malibù</title>
+  
+      <!----------  Bootstrap CSS  ---------->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+      <!----------  FontAwensome  ---------->
+      <script src="https://kit.fontawesome.com/b77f5fdcdb.js" crossorigin="anonymous"></script>
+      <!----------  Our CSS  ---------->
+      <link rel="stylesheet" href="src/style.css" type="text/css">
+  
+      <script src="https://use.fontawesome.com/351be3174f.js"></script>
+    </head>
+  
+    <!----------  BODY  ---------->
+    <body>
+      
+    <?php include("templates/btt-button.php"); ?>
+
+    <?php include("templates/navbar.php"); ?>
+
+    <!----------  HEADER  ---------->
+      <header>
+        <div class="container-background">
+          <div class="opacita-header">
+            <div class="contenuto-header">
+              <h1 class="">HEADER</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <div class="spaziatore"></div>
+      
+      <form id="newsletter" action="sendmail.php" method ="POST">
+      
+        <div class="container" style="background-color:white">
+          
+          <input type="text" placeholder="Name" name="name" required value="<?php echo $_POST["name"]?>">
+          <input type="text" placeholder="Surname" name="surname" required value="<?php echo $_POST["surname"]?>">
+          <input type="text" placeholder="Email address" name="mail" required value="<?php echo $_POST["mail"]?>">
+          <div><?php echo $errors["email"] ?></div>
+
+        </div>
+      
+        <div class="container">
+          <input type="submit" value="submit" name = "submit">
+          <div><?php echo $errors["submitted"] ?></div>
+
+        </div>
+      </form>
+      <!----------  CONTENUTO  ---------->
+      <section class="content text-center">
+        <div class="container-immagine-contenuto">
+        </div>
+      </section>
+    <?php include("templates/footer.php"); ?>
+     
+      <!----------  JS Scripts Bootstrap  ---------->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+      <!---------- Our Scripts  ---------->
+      <script src="src/script.js"></script>
+    </body>
+  </html>
