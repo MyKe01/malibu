@@ -1,5 +1,5 @@
 -Download XAMPP
--Edit the php.ini file in the php\ subdirectory of your XAMPP installation directory (usually, C:\xampp). Within this file, find the [mail function] section and replace it with the following directives:
+-Edit the php.ini file in the php\ subdirectory of your XAMPP installation directory (usually, C:\xampp for windows; /opt/lampp for Linux Users). Within this file, find the [mail function] section and replace it with the following directives:
 
 sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
 Edit the sendmail.ini file in the sendmail\ subdirectory of your XAMPP installation directory. Within this file, find the [sendmail] section and replace it with the following directives:
