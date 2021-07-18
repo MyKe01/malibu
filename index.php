@@ -80,45 +80,10 @@
           <input type="submit" value="Subscribe">
         </div>
       </form>
-      <!------  Back-To-Top Button  ------>
-      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-        <i class="fas fa-arrow-circle-up"></i>
-      </button>
+
       
       
-      <!----------  NAVBAR  ---------->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid ">
-            <a href="#" class="navbar-brand">.MALIBÙ</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 centraUl ">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Cos'è Malibù</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Chi siamo</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contattaci</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><del>Prezzi</del></a>
-                  </li>
-                </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
-                <button class="btn btn-outline-success" type="submit">Cerca</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
+      
      
   
       <!----------  HEADER  ---------->
@@ -142,22 +107,7 @@
           
         </div>
       </section>
-      <!----------  FOOTER  ---------->
-      <footer class="bg-dark text-center text-white">
-        <div class="footer">
-          <ul class="social-network social-circle">
-        <!--<li><a href="" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>-->
-        <!--<li><a href="" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>-->
-            <li><a href="https://facebook.com/francesco.trementozzi" target="_blank" class="icoFacebook " title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://instagram.com/ftrement" target="_blank" class="icoInstagram" title="Instagram zoom"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://t.me/f3ment" target="_blank" class="icoTelegram" title="Telegram"><i class="fa fa-telegram"></i></a></li>
-            <li><a href="https://github.com/f3ment" target="_blank" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
-            <li><a href="mailto:f3ment@protonmail.com" class="icoEnvelope" title="Email"><i class="fa fa-envelope"></i></a></li>
-          </ul>
-          <br><br>
-          <p class="copyright" style="color: rgba(255,255,255,0.6)">Copyright © 2021 Malibu.com</p>
-        </div>
-      </footer>
+     
   
       <!----------  JS Scripts Bootstrap  ---------->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
