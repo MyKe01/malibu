@@ -1,4 +1,24 @@
-ciao
+-Download XAMPP
+-Edit the php.ini file in the php\ subdirectory of your XAMPP installation directory (usually, C:\xampp). Within this file, find the [mail function] section and replace it with the following directives:
 
-sono francesco
+sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+Edit the sendmail.ini file in the sendmail\ subdirectory of your XAMPP installation directory. Within this file, find the [sendmail] section and replace it with the following directives:
 
+smtp_server=smtp.gmail.com
+smtp_port=465
+smtp_ssl=auto
+error_logfile=error.log
+auth_username=your-gmail-username@gmail.com
+auth_password=your-gmail-password
+Remember to replace the dummy values shown with your actual Gmail address and account password.
+
+Restart the Apache server using the XAMPP control panel.
+
+Google emails may do not work properly for security issues.
+
+-put all datas from github to xampp/htdocs in a single folder
+
+- to try if everything is correct run on the browser localhost/foldername
+
+- to use correctly the same database, go to phpmyadmin, import, choose file and select modelist.sql, then run
+and you will have the same database.

@@ -2,6 +2,44 @@
   <html lang="it">
     <!----------  HEAD  ---------->
     <head>
+      <style>
+        /* Style the form element with a border around it */
+        form {
+          border: 4px solid #f1f1f1;
+        }
+
+        /* Add some padding and a grey background color to containers */
+        .container {
+          padding: 20px;
+          background-color: #f1f1f1;
+        }
+
+        /* Style the input elements and the submit button */
+        input[type=text], input[type=submit] {
+          width: 100%;
+          padding: 12px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+
+        /* Add margins to the checkbox */
+        input[type=checkbox] {
+          margin-top: 16px;
+        }
+
+        /* Style the submit button */
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          border: none;
+        }
+
+        input[type=submit]:hover {
+          opacity: 0.8;
+        }
+      </style>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +62,24 @@
   
     <!----------  BODY  ---------->
     <body>
+      <form action="sendmail.php" method ="post">
+        <div class="container">
+          <h2>Subscribe to our Newsletter</h2>
+          <p>Lorem ipsum..</p>
+        </div>
       
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+          </label>
+        </div>
+      
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
       <!------  Back-To-Top Button  ------>
       <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-circle-up"></i>
@@ -78,14 +133,15 @@
       </header>
       
       <div class="spaziatore"></div>
+
+      
   
       <!----------  CONTENUTO  ---------->
       <section class="content text-center">
         <div class="container-immagine-contenuto">
-  
+          
         </div>
       </section>
-  
       <!----------  FOOTER  ---------->
       <footer class="bg-dark text-center text-white">
         <div class="footer">
