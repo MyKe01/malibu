@@ -1,3 +1,6 @@
+<?php
+?>
+
 <DOCTYPE html>
   <html lang="it">
     <!----------  HEAD  ---------->
@@ -58,5 +61,29 @@
       <script src="https://use.fontawesome.com/351be3174f.js"></script>
     </head>
   
+    <!----------  BODY  ---------->
+    <body>
+      
+    <?php include("templates/btt-button.php"); ?>
+
+    <?php include("templates/navbar.php"); ?>
+      
+    <?php include("templates/header.php"); ?>   
+      
+      <div class="spaziatore"></div>
     
+    <?php include("templates/form.php"); ?> 
+    
+    <!----------  CONTENUTO  ---------->
+    <section class="content text-center">
+      <div class="container-immagine-contenuto">
+      </div>
+    </section>
+    <?php include("templates/footer.php"); ?>
+
+    <!----------  JS Scripts Bootstrap  ---------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <!---------- Our Scripts  ---------->
+    <script src="src/script.js"></script>
+    </body>
   </html>

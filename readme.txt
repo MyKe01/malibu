@@ -22,3 +22,6 @@ Google emails may do not work properly for security issues.
 
 - to use correctly the same database, go to phpmyadmin, import, choose file and select modelist.sql, then run
 and you will have the same database.
+
+- finally in order to record datas you have to create on phpmyadmin an user with all privileges.
+then in addNews change in line 5 'Myke',' admin' and replace that with your current username and password
