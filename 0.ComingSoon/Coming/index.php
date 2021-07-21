@@ -18,6 +18,10 @@
 
 </head>
 <body>
+    <!-- VIDEO BACKGROUND -->
+  <video autoplay muted loop id="myVideo" poster="src/img/bg-img.png">
+    <source src="src/video/bg-video.mp4" type="video/mp4">
+  </video>
     <!-- INCLUDO L'HEADER -->
     <?php include("templates/header.php"); ?>
 
