@@ -18,45 +18,17 @@
 
 </head>
 <body>
-  <header>
-    <section>
-      Modelist
-    </section>
-    <ul class="menu">
-      <li>Contatti</li>
-      <li>Chi Siamo</li>
-    </ul>
-  </header>
-  <div class="main">
-    <p class="title">Coming Soon</p>
-    <div class="separator"></div>
-    <p class="message">Al momento stiamo lavorando al sito.</p>
-    <p class="message">Iscriviti per sapere quando sarà disponibile.</p>
-    
-    <!-- NEWSLETTER FORM  -->
-    <input type="checkbox" name="" id="toggle">
-    <label for="toggle" class="show-btn">avvisami!</label>
-    <div class="wrapper">
-      <label for="toggle" class="cancel-btn"><i class="fas fa-times"></i></label>
-      <div class="icon"><i class="far fa-envelope"></i></div>
-      <div class="content">
-        <p class="header">Rimani Aggiornato</p>
-        <p class="after">Iscriviti alla nostra newsletter e ricevi gli ultimi aggiornamenti direttamente nella tua casella di posta</p>
-      </div>
-      <form action="#">
-        <div class="field">
-          <input type="text" placeholder="Nome*" required>
-        </div>
-        <div class="field">
-          <input type="text" placeholder="Email*" required>
-        </div>
-        <div class="field btn">
-          <input type="submit" value="AVVISAMI!">
-        </div>
-      </form>
-      <div class="text">Non condividiamo le tue informazioni con terze parti</div>
-    </div>
+    <!-- INCLUDO L'HEADER -->
+    <?php include("templates/header.php"); ?>
 
+    <!-- INCLUDO IL MAIN -->
+  <div class="main">
+    <?php include("templates/main.php"); ?>
+
+    <!-- INCLUDO IL FORM PER LA NEWSLETTER -->
+    <?php include("templates/form.php"); ?>
+
+    
   </div>
   <footer>
     <a href="#"><i class="fab fa-facebook-f"></i></a>
