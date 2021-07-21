@@ -19,5 +19,6 @@
           <input type="submit" value="AVVISAMI!">
         </div>
       </form>
-      <div class="text">Non condividiamo le tue informazioni con terze parti</div>
+      <div class="text">Non condividiamo le tue informazioni con terze parti.</div>
+      <div class="text">Per saperne di più leggi la nostra <a href="#" class="policy">privacy & policy</a>.</div>
     </div>
