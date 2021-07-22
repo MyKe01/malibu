@@ -1,18 +1,14 @@
 <?php
-    function addToNewsletter($name, $surname, $mail){
+    function addToNewsletter($name, $mail){
         $res = '';
         //connect to database
-        $conn = mysqli_connect('localhost', 'Myke', 'admin', 'modelist'); 
-        //check connection
-        if(!$conn){
-          echo 'Connection error: ' . mysqli_connect_error(); 
-        }
-        $sql = "INSERT INTO `newsletter` (`Name`, `Surname`, `Email`) VALUES ('$name', '$surname', '$mail')";
+        include("db_connect.php");
+        $sql = "INSERT INTO `newsletter` ( `Email`,`Name`) VALUES ('$mail', '$name')";
         //query db
-        if ($conn->query($sql)) {
+        if (mysqli_query($conn, $sql)) {
             $res = "New record created successfully";
         }else{
-            $res = "Error: " . $sql . "<br>" . $conn->error;
+            $res = " Error: retry";
         }
         $conn->close();
 
