@@ -1,89 +1,41 @@
-<?php
-?>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelist</title>
+  <!--favicon-->
+  <link rel="icon" href="src/favicon/favicon.ico" type="image/x-icon"/>
+  <!--Icone FontAwnsome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Foglio di Style-->
+  <link rel="stylesheet" href="src/style/style.css">
+  <!--FONT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-<DOCTYPE html>
-  <html lang="it">
-    <!----------  HEAD  ---------->
-    <head>
-      <style>
-        /* Style the form element with a border around it */
-        form {
-          border: 4px solid #f1f1f1;
-        }
+</head>
+<body>
+    <!-- INCLUDO L'HEADER -->
+    <?php include("templates/header.php"); ?>
 
-        /* Add some padding and a grey background color to containers */
-        .container {
-          padding: 20px;
-          background-color: #f1f1f1;
-        }
+    <!-- INCLUDO IL MAIN -->
+  <div class="main">
+    <?php include("templates/main.php"); ?>
 
-        /* Style the input elements and the submit button */
-        input[type=text], input[type=submit] {
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          display: inline-block;
-          border: 1px solid #ccc;
-          box-sizing: border-box;
-        }
+    <!-- INCLUDO IL FORM PER LA NEWSLETTER -->
+    <?php include("templates/form.php"); ?>
 
-        /* Add margins to the checkbox */
-        input[type=checkbox] {
-          margin-top: 16px;
-        }
-
-        /* Style the submit button */
-        input[type=submit] {
-          background-color: #04AA6D;
-          color: white;
-          border: none;
-        }
-
-        input[type=submit]:hover {
-          opacity: 0.8;
-        }
-      </style>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <!----------  FavIcon e Title ---------->
-      <link rel="icon" type="image/x-icon" href="src/favicon/favicon.ico" />
-      <title>Malibù</title>
-  
-      <!----------  Bootstrap CSS  ---------->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-      <!----------  FontAwensome  ---------->
-      <script src="https://kit.fontawesome.com/b77f5fdcdb.js" crossorigin="anonymous"></script>
-      <!----------  Our CSS  ---------->
-      <link rel="stylesheet" href="src/style.css" type="text/css">
-  
-      <script src="https://use.fontawesome.com/351be3174f.js"></script>
-    </head>
-  
-    <!----------  BODY  ---------->
-    <body>
-      
-    <?php include("templates/btt-button.php"); ?>
-
-    <?php include("templates/navbar.php"); ?>
-      
-    <?php include("templates/header.php"); ?>   
-      
-      <div class="spaziatore"></div>
     
-    <?php include("templates/form.php"); ?> 
-    
-    <!----------  CONTENUTO  ---------->
-    <section class="content text-center">
-      <div class="container-immagine-contenuto">
-      </div>
-    </section>
-    <?php include("templates/footer.php"); ?>
-
-    <!----------  JS Scripts Bootstrap  ---------->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <!---------- Our Scripts  ---------->
-    <script src="src/script.js"></script>
-    </body>
-  </html>
+  </div>
+  <footer>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </footer>
+  
+</body>
+<script src="src/script/script.js"></script>
+</html>
