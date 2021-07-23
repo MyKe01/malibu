@@ -28,14 +28,10 @@
     <!-- INCLUDO IL FORM PER LA NEWSLETTER -->
     <?php include("templates/form.php"); ?>
 
-    
   </div>
-  <footer>
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-  </footer>
-  
+    <!-- INCLUDO IL FOOTER -->
+    <?php include("templates/footer.php"); ?>
+    
 </body>
 <script src="src/script/script.js"></script>
 </html>
