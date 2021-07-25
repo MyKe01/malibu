@@ -20,5 +20,5 @@
         </div>
       </form>
       <div class="text">Non condividiamo le tue informazioni con terze parti.</div>
-      <div class="text">Per saperne di più leggi la nostra <a href="" target="_blank" class="policy">privacy & policy</a>.</div>
+      <div class="text">Per saperne di più leggi la nostra <a href="../src/privacy&policy.txt" target="_blank" class="policy">privacy & policy</a>.</div>
     </div>
