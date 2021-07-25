@@ -8,7 +8,7 @@
         <p class="header">Rimani Aggiornato</p>
         <p class="after">Iscriviti alla nostra newsletter e ricevi gli ultimi aggiornamenti direttamente nella tua casella di posta</p>
       </div>
-      <form action="#">
+      <form action="../../sendmail.php">
         <div class="field">
           <input type="text" placeholder="Nome*" required>
         </div>
