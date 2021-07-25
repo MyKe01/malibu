@@ -1,30 +1,4 @@
 <?php
-//display errors
-   $errors = array('email'=>'', 'submitted' =>'', 'added' => ' ');
-
-   if(isset($_POST["submit"])){
-      $email = htmlspecialchars($_POST["mail"]);
-      $name = htmlspecialchars($_POST["name"]);
-      $surname = htmlspecialchars($_POST["surname"]);
-   }
-//check email
-    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      //add new record to db
-      $addNews = require ("./db/addNews.php"); 
-      
-      $errors['added'] = $addNews.addToNewsletter($name, $surname, $email);
-      
-      $subject = "Hello ".$name." from The Modelist!";
-      $message = 'This is a test';
-      $headers = "From: gokuinstapage@gmail.com\r\n";
-      if (mail($email, $subject, $message, $headers)) {
-         $errors["submitted"] ="SUCCESS";
-      } else {
-         $errors["submitted"] = "ERROR";
-      }
-    }else{
-      $errors["email"] = "The email insert is not valid";
-    }
 ?>
 
 <DOCTYPE html>
@@ -97,32 +71,19 @@
     <?php include("templates/header.php"); ?>   
       
       <div class="spaziatore"></div>
-      
-    <form id="newsletter" action="sendmail.php" method ="POST">
     
-      <div class="container" style="background-color:white"> 
-        <input type="text" placeholder="Name" name="name" required value="<?php echo $_POST["name"]?>">
-        <input type="text" placeholder="Surname" name="surname" required value="<?php echo $_POST["surname"]?>">
-        <input type="text" placeholder="Email address" name="mail" required value="<?php echo $_POST["mail"]?>">
-        <div><?php echo $errors["email"] ?></div>
-        <div><?php echo $errors["added"] ?></div>
-      </div>
+    <?php include("templates/form.php"); ?> 
     
-      <div class="container">
-        <input type="submit" value="submit" name = "submit">
-        <div><?php echo $errors["submitted"] ?></div>
+    <!----------  CONTENUTO  ---------->
+    <section class="content text-center">
+      <div class="container-immagine-contenuto">
       </div>
-    </form>
-      <!----------  CONTENUTO  ---------->
-      <section class="content text-center">
-        <div class="container-immagine-contenuto">
-        </div>
-      </section>
+    </section>
     <?php include("templates/footer.php"); ?>
-     
-      <!----------  JS Scripts Bootstrap  ---------->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-      <!---------- Our Scripts  ---------->
-      <script src="src/script.js"></script>
+
+    <!----------  JS Scripts Bootstrap  ---------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <!---------- Our Scripts  ---------->
+    <script src="src/script.js"></script>
     </body>
   </html>
