@@ -25,6 +25,20 @@
     <!-- INCLUDO L'HEADER -->
     <?php include("/malibu/Coming/templates/header.php"); ?>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
   <footer>
     <a href="#"><i class="fab fa-facebook-f"></i></a>
     <a href="#"><i class="fab fa-instagram"></i></a>
