@@ -20,5 +20,5 @@
         </div>
       </form>
       <div class="text">Non condividiamo le tue informazioni con terze parti.</div>
-      <div class="text">Per saperne di più leggi la nostra <a href="../src/privacy&policy.pdf" target="_blank" class="policy">privacy & policy</a>.</div>
+      <div class="text">Per saperne di più leggi la nostra <a href="/malibu/Coming/src/Pages/Privacy&Policy.php" class="policy">privacy & policy</a>.</div>
     </div>
