@@ -76,13 +76,14 @@ header section{
   cursor: pointer;
 }
 
-header li{
+header li a{
   cursor: pointer;
   transition: color 0.3s;
   color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
 }
 
-header li:hover{
+header li a:hover{
   color:#fff;
 }
 

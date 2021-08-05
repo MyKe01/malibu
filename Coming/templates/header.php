@@ -3,7 +3,7 @@
       Modelist
     </section>
     <ul class="menu">
-      <li>Contatti</li>
-      <li>Chi Siamo</li>
+      <li><a href="#">Contatti</a></li>
+      <li><a href="/malibu/Coming/src/Pages/chisiamo.html">Chi Siamo</a></li>
     </ul>
 </header>
