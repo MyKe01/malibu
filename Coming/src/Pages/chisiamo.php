@@ -19,13 +19,21 @@
 </head>
 <body>
     <!-- VIDEO BACKGROUND -->
-    <video autoplay muted loop id="myVideo" poster="/malibu/Coming/src/img/bg-img.png">
-      <source src="/malibu/Coming/src/video/bg-video.mp4" type="video/mp4">
-    </video>
-    
+  <video autoplay muted loop id="myVideo" poster="/malibu/Coming/src/img/bg-img.png">
+    <source src="/malibu/Coming/src/video/bg-video.mp4" type="video/mp4">
+  </video>
     <!-- INCLUDO L'HEADER -->
     <?php include("/malibu/Coming/templates/header.php"); ?>
- 
+
+  <footer>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </footer>
   
 </body>
+
+
+<script src="src/script/script.js"></script>
+
 </html>
