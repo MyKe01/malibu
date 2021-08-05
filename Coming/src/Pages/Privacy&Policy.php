@@ -7,11 +7,11 @@
   <title>Modelist</title>
 
   <!--favicon-->
-  <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="/malibu/Coimng/favicon/favicon.ico" type="image/x-icon"/>
   <!--Icone FontAwnsome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Foglio di Style-->
-  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="/malibu/Coimng/src/style/style.css">
   <!--FONT-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,17 @@
 </head>
 <body>
 
-  CIAO
+  <!-- VIDEO BACKGROUND -->
+  <video autoplay muted loop id="myVideo" poster="/malibu/Coimng/src/img/bg-img.png">
+    <source src="/malibu/Coimng/src/video/bg-video.mp4" type="video/mp4">
+  </video>
+  
+  
+  <footer>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </footer>
   
 </body>
 </html>
