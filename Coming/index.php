@@ -35,9 +35,9 @@
     
   </div>
   <footer>
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#https://www.facebook.com/francesco.trementozzi"><i class="fab fa-facebook-f"></i></a>
+    <a href="#https://www.instagram.com/ftrement/"><i class="fab fa-instagram"></i></a>
+    <a href="#https://twitter.com/f3ment"><i class="fab fa-twitter"></i></a>
   </footer>
   
 </body>
