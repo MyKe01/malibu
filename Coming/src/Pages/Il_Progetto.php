@@ -41,7 +41,6 @@
     
     <!-- RICHIAMO ALL HOME  -->
     <label for="toggle" class="show-btn"><a href="/malibu/Coming">Per Saperne Di Più</a></label>
-    
   </div>
 
   
