@@ -54,6 +54,6 @@
 </body>
 
 
-<script src="src/script/script.js"></script>
+<script src="/malibu/src/script/script.js"></script>
 
 </html>
