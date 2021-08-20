@@ -72,8 +72,9 @@ header li:first-child{
   border-right: 2px solid;
 }
 
-header section{
+header section a{
   cursor: pointer;
+  text-decoration: none;
 }
 
 header li a{
@@ -105,6 +106,12 @@ header li a:hover{
   text-align: center;
 }
 
+.main2{
+  position: relative;
+  text-align: center;
+  background-color: #62727b69;
+}
+
 .title{
   color:#fff;
   font-size: 4em;
@@ -116,6 +123,13 @@ header li a:hover{
   margin: 20px auto;
   height: 2px;
   width: 200px;
+  background-color: #62727b;
+}
+
+.separator2{
+  margin: 20px auto;
+  height: 2px;
+  width: 600px;
   background-color: #62727b;
 }
 
