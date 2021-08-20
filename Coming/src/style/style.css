@@ -157,6 +157,10 @@ header li a:hover{
   background-color: #102027;
 }
 
+.main a{
+  text-decoration: none;
+}
+
 
 /* ----- Email ----- */
 .show-btn, .wrapper{
