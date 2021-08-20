@@ -49,6 +49,7 @@ header{
   padding: 0 32px;
   font-size: 1.7em;
   letter-spacing: 1.5px;
+  z-index:100;
 }
 
 header section{
@@ -113,6 +114,13 @@ header li a:hover{
   letter-spacing: 5px;
 }
 
+.ttitle{
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
 .separator{
   margin: 20px auto;
   height: 2px;
@@ -153,6 +161,28 @@ header li a:hover{
 
 .main a{
   text-decoration: none;
+}
+
+
+.testuale{
+  position:absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: #37464f;
+  z-index: -1;
+}
+.testuale p{
+  margin-top: 80px;
+}
+
+.griglia{
+  display: grid;
+  grid-template-rows: 2em 300px;
+  grid-template-columns: 20% 20% 20% 20% 20% ;
+  grid-template-areas: 
+  "title title title title title"
+  "Federico Jacopo Francesco Michelangelo Giuseppe";
 }
 
 
