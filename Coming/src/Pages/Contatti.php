@@ -34,6 +34,14 @@
     <div class="separator2"></div>
     <p class="message">Scrivi all'indirizzo <a href="mailto:info@modelist.it?subject=Email dal COMING SOON">info@modelist.it</a>.<br>Oppure contattaci privatamente<br>ai nostri indirizzi email.</p>  </div>
   <div class="separator2"></div>
+
+  <div class="griglia">
+    <div class="nome">Federico Baglivo</div>
+    <div class="Federico">federico.baglivo@gmail.com</div>
+  </div>
+
+
+
   <footer>
     <a href="#"><i class="fab fa-facebook-f"></i></a>
     <a href="#"><i class="fab fa-instagram"></i></a>
