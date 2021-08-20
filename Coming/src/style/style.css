@@ -74,15 +74,8 @@ header li:first-child{
 
 header section a{
   cursor: pointer;
-  transition: color 0.3s;
-  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
 }
-
-header section a:hover{
-  color:#fff;
-}
-
 
 header li a{
   cursor: pointer;
