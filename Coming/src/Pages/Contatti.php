@@ -18,10 +18,6 @@
 
 </head>
 <body>
-  <!-- VIDEO BACKGROUND -->
-  <video autoplay muted loop id="myVideo" poster="/malibu/Coming/src/img/bg-img2.png">
-    <source src="/malibu/Coming/src/video/bg-video2.mp4" type="video/mp4">
-  </video>
   
   <header>
     <section>
