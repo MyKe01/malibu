@@ -181,8 +181,12 @@ header li a:hover{
   grid-template-rows: 2em 300px;
   grid-template-columns: 20% 20% 20% 20% 20% ;
   grid-template-areas: 
-  "title title title title title"
+  "nome nome nome nome nome "
   "Federico Jacopo Francesco Michelangelo Giuseppe";
+}
+
+.Federico .Jacopo .Francesco .Michelangelo .Giuseppe{
+  background-color: #fff;
 }
 
 
