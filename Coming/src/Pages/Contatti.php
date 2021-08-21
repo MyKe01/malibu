@@ -10,7 +10,7 @@
   <!--Icone FontAwnsome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Foglio di Style-->
-  <link rel="stylesheet" href="/malibu/Coming/src/style/style.css">
+  <link rel="stylesheet" href="style2.css">
   <!--FONT-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,11 @@
 
 </head>
 <body>
-  
+  <!-- VIDEO BACKGROUND -->
+  <video autoplay muted loop id="myVideo" poster="/malibu/Coming/src/img/bg-img.png">
+    <source src="/malibu/Coming/src/video/bg-video.mp4" type="video/mp4">
+  </video>
+  <!-- NAVBAR -->
   <header>
     <section>
       <a href="/malibu/Coming/">Modelist</a>
@@ -28,7 +32,7 @@
       <li><a href="/malibu/Coming/src/Pages/Il_Progetto.php">Il progetto</a></li>
     </ul>
   </header>
-
+  <!-- FOOTER -->
   <footer>
     <a href="#"><i class="fab fa-facebook-f"></i></a>
     <a href="#"><i class="fab fa-instagram"></i></a>
