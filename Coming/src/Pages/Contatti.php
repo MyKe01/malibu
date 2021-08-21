@@ -32,6 +32,101 @@
       <li><a href="/malibu/Coming/src/Pages/Il_Progetto.php">Il progetto</a></li>
     </ul>
   </header>
+
+  <!-- SEZIONE PRINCIPALE DEI CONTATTI -->
+  <div class="main">
+
+    <div class="spazio"></div>
+
+    <div class="submain">
+      <div class="ttitle">Federico Baglivo</div>
+      <div class="separator"></div>
+      <div class="message">ceo - founder</div>
+      <div class="message2">Studente di Economia presso l'Università cattolica del sacro cuore, MI</div>
+      <div class="icone">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fas fa-envelope"></i></a>
+        <a href=""><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+
+    <div class="spazio"></div>
+    
+    <div class="submain">
+      <div class="ttitle">Jacopo Iofrida</div>
+      <div class="separator"></div>
+      <div class="message">ceo - founder</div>
+      <div class="message2">Studente di Giurisprudenza presso l'Università cattolica del sacro cuore, MI</div>
+      <div class="icone">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fas fa-envelope"></i></a>
+        <a href=""><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+
+    <div class="spazio"></div>
+
+    <div class="submain">
+      <div class="ttitle">Francesco Trementozzi</div>
+      <div class="separator"></div>
+      <div class="message">ceo - founder</div>
+      <div class="message2">Studente di Ingegneria Informatica, Politecnico di Milano</div>
+      <div class="icone">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fas fa-envelope"></i></a>
+        <a href=""><i class="fab fa-telegram"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="spazio"></div>
+    
+    <div class="submain">
+      <div class="ttitle">Michelangelo Stasi</div>
+      <div class="separator"></div>
+      <div class="message">ceo - founder</div>
+      <div class="message2">Studente di Ingegneria Informatica, Politecnico di Milano</div>
+      <div class="icone">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fas fa-envelope"></i></a>
+        <a href=""><i class="fab fa-telegram"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="spazio"></div>
+    
+    <div class="submain">
+      <div class="ttitle">Giuseppe Starnini</div>
+      <div class="separator"></div>
+      <div class="message">ceo - founder</div>
+      <div class="message2">Studente di Ingegneria Informatica, Politecnico di Milano</div>
+      <div class="icone">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fas fa-envelope"></i></a>
+        <a href=""><i class="fab fa-telegram"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="spazio_finale"></div>
+
+  </div>
+
+
+  
+  
+  
   <!-- FOOTER -->
   <footer>
     <a href="#"><i class="fab fa-facebook-f"></i></a>
