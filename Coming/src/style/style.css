@@ -163,19 +163,6 @@ header li a:hover{
   text-decoration: none;
 }
 
-
-.testuale{
-  position:absolute;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background: #37464f;
-  z-index: -1;
-}
-.testuale p{
-  margin-top: 80px;
-}
-
 .griglia{
   display: grid;
   grid-template-rows: 2em 300px;
