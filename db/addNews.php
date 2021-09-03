@@ -8,7 +8,7 @@
         if (mysqli_query($conn, $sql)) {
             $res = "New record created successfully";
         }else{
-            $res = " Error: retry";
+            $res = " Error: retry. If problem persists, contact Modelist support.";
         }
         $conn->close();
 

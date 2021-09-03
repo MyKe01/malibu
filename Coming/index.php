@@ -44,7 +44,4 @@
 
 
 <script src="src/script/script.js"></script>
-
-
-
 </html>
