@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modelist</title>
   <!--favicon-->
-  <link rel="icon" href="/malibu/Coming/src/favicon/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon"/>
   <!--Icone FontAwnsome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Foglio di Style-->
-  <link rel="stylesheet" href="/malibu/Coming/src/style/style.css">
+  <link rel="stylesheet" href="../style/style.css">
   <!--FONT-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,17 +20,17 @@
 </head>
 <body>
     <!-- VIDEO BACKGROUND -->
-  <video autoplay muted loop id="myVideo" poster="/malibu/Coming/src/img/bg-img2.png">
-    <source src="/malibu/Coming/src/video/bg-video2.mp4" type="video/mp4">
+  <video autoplay muted loop id="myVideo" poster="../img/bg-img2.png">
+    <source src="../video/bg-video2.mp4" type="video/mp4">
   </video>
 
   <header>
     <section>
-      <a href="/malibu/Coming/">Modelist</a>
+      <a href="../../">Modelist</a>
     </section>
     <ul class="menu">
-      <li><a href="#">Contatti</a></li>
-      <li><a href="/malibu/Coming/src/Pages/Il_Progetto.php">Il progetto</a></li>
+      <li><a href="./contatti.php">Contatti</a></li>
+      <li><a href="#">Il progetto</a></li>
     </ul>
   </header>
 
@@ -39,7 +39,7 @@
     <div class="separator"></div>
     <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente, sunt aliquid vitae non eaque expedita in officia dolores corrupti. Eveniet tempora reprehenderit similique perferendis libero distinctio, sequi ipsa quisquam.</p>
   <!-- RICHIAMO ALL HOME  -->
-    <label for="toggle" class="show-btn"><a href="/malibu/Coming">Per Saperne Di Più</a></label>
+    <label for="toggle" class="show-btn"><a href="../../">Per Saperne Di Più</a></label>
   </div>
 
   
@@ -53,6 +53,6 @@
 </body>
 
 
-<script src="/malibu/src/script/script.js"></script>
+<script src="../script/script.js"></script>
 
 </html>

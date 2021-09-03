@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modelist</title>
   <!--favicon-->
-  <link rel="icon" href="/malibu/Coming/src/favicon/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon"/>
   <!--Icone FontAwnsome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Foglio di Style-->
@@ -19,17 +19,17 @@
 </head>
 <body>
   <!-- VIDEO BACKGROUND -->
-  <video autoplay muted loop id="myVideo" poster="/malibu/Coming/src/img/bg-img.png">
-    <source src="/malibu/Coming/src/video/bg-video.mp4" type="video/mp4">
+  <video autoplay muted loop id="myVideo" poster="../img/bg-img.png">
+    <source src="../video/bg-video.mp4" type="video/mp4">
   </video>
   <!-- NAVBAR -->
   <header>
     <section>
-      <a href="/malibu/Coming/">Modelist</a>
+      <a href="../../">Modelist</a>
     </section>
     <ul class="menu">
       <li><a href="#">Contatti</a></li>
-      <li><a href="/malibu/Coming/src/Pages/Il_Progetto.php">Il progetto</a></li>
+      <li><a href="./Il_Progetto.php">Il progetto</a></li>
     </ul>
   </header>
 
@@ -47,8 +47,8 @@
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fas fa-envelope"></i></a>
-        <a href=""><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
       </div>
     </div>
 
@@ -63,8 +63,8 @@
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fas fa-envelope"></i></a>
-        <a href=""><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
       </div>
     </div>
 
@@ -79,9 +79,9 @@
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fas fa-envelope"></i></a>
-        <a href=""><i class="fab fa-telegram"></i></a>
-        <a href=""><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
       </div>
     </div>
 
@@ -96,9 +96,9 @@
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fas fa-envelope"></i></a>
-        <a href=""><i class="fab fa-telegram"></i></a>
-        <a href=""><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
       </div>
     </div>
 
@@ -113,9 +113,9 @@
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fas fa-envelope"></i></a>
-        <a href=""><i class="fab fa-telegram"></i></a>
-        <a href=""><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
       </div>
     </div>
 
@@ -137,6 +137,6 @@
 </body>
 
 
-<script src="/malibu/src/script/script.js"></script>
+<script src="../script/script.js"></script>
 
 </html>

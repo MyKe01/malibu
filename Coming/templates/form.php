@@ -1,5 +1,5 @@
 <!-- NEWSLETTER FORM  -->
-<input type="checkbox" name="" id="toggle">
+<input type="checkbox" name="" id="toggle" style = "display:none">
     <label for="toggle" class="show-btn">avvisami!</label>
     <div class="wrapper">
       <label for="toggle" class="cancel-btn"><i class="fas fa-times"></i></label>
@@ -8,17 +8,17 @@
         <p class="header">Rimani Aggiornato</p>
         <p class="after">Iscriviti alla nostra newsletter e ricevi gli ultimi aggiornamenti direttamente nella tua casella di posta</p>
       </div>
-      <form action="../../sendmail.php">
+      <form action="sendmail.php" method = "POST">
         <div class="field">
-          <input type="text" placeholder="Nome*" required>
+          <input type="text" placeholder="Nome*" name = "name" required>
         </div>
         <div class="field">
-          <input type="text" placeholder="Email*" required>
+          <input type="text" placeholder="Email*" name = "email" required>
         </div>
         <div class="field btn">
-          <input type="submit" value="AVVISAMI!">
+          <input type="submit" name = "submit" value="AVVISAMI!">
         </div>
       </form>
       <div class="text">Non condividiamo le tue informazioni con terze parti.</div>
-      <div class="text">Per saperne di più leggi la nostra <a href="/malibu/Coming/src/privacy&policy.pdf" target="_blank" class="policy">privacy & policy</a>.</div>
+      <div class="text">Per saperne di più leggi la nostra <a href="./src/privacy&policy.pdf" target="_blank" class="policy">privacy & policy</a>.</div>
     </div>
