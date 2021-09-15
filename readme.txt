@@ -1,27 +1,25 @@
--Download XAMPP
--Edit the php.ini file in the php\ subdirectory of your XAMPP installation directory (usually, C:\xampp for windows; /opt/lampp for Linux Users). Within this file, find the [mail function] section and replace it with the following directives:
+You have to add in file ".env" your global names as server address or api key.
 
-sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
-Edit the sendmail.ini file in the sendmail\ subdirectory of your XAMPP installation directory. Within this file, find the [sendmail] section and replace it with the following directives:
+With the command : "node ./index.js" 
+the server will start to listen to requests.
 
-smtp_server=smtp.gmail.com
-smtp_port=465
-smtp_ssl=auto
-error_logfile=error.log
-auth_username=your-gmail-username@gmail.com
-auth_password=your-gmail-password
-Remember to replace the dummy values shown with your actual Gmail address and account password.
+In order to connect the MongoDB database you have to open a different command prompt. Create the data directory where MongoDB stores data.
+MongoDB's default data directory path is the absolute path \data\db on the drive from which you start MongoDB.
 
-Restart the Apache server using the XAMPP control panel.
+From the Command Interpreter, create the data directories:
 
-Google emails may do not work properly for security issues.
+"
+cd C:\
+md "\data\db"
+"
 
--put all datas from github to xampp/htdocs in a single folder
+Start your MongoDB database.
+To start MongoDB, run exe.
 
-- to try if everything is correct run on the browser localhost/foldername
+"C:\Program Files\MongoDB\Server\5.0\bin\mongod.exe" --dbpath="c:\data\db"
 
-- to use correctly the same database, go to phpmyadmin, import, choose file and select modelist.sql, then run
-and you will have the same database.
+The --dbpath option points to your database directory.
 
-- finally in order to record datas you have to create on phpmyadmin an user with all privileges.
-then in addNews change in line 5 'Myke',' admin' and replace that with your current username and password
+If the MongoDB database server is running correctly, the Command Interpreter displays:
+
+[initandlisten] waiting for connections
