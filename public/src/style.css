@@ -363,7 +363,11 @@ form .btn input{
   color: #62727b;
 }
 
-
+#Not_Added, #Added{
+  display: none;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
 
 
 /* ----- FOOTER ----- */

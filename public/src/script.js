@@ -1,5 +1,4 @@
 const form = document.querySelector('#newsletter');
-require('dotenv').config()
 
 form.addEventListener( 'submit', function(e){ 
   var dict = {};
@@ -7,7 +6,7 @@ form.addEventListener( 'submit', function(e){
     dict[`${key}`] = `${value}`;
   }
   e.preventDefault();
-  fetch(`http://${process.env.SERVER_ADDRESS}:4000/api/newsletter`, {
+  fetch(`http://localhost:4000/api/newsletter`, {
     method : 'POST',
     headers : {
       'content-type' : 'application/JSON'
@@ -15,6 +14,13 @@ form.addEventListener( 'submit', function(e){
     body : JSON.stringify(dict)
   })
   .then(res => {
+    if (res.status == 422){
+      document.getElementById('Not_Added').style.display = 'flex';
+      document.getElementById('Added').style.display = 'none';
+    }else{
+      document.getElementById('Added').style.display = 'flex';
+      document.getElementById('Not_Added').style.display = 'none';
+    } 
     return res.text();
   })
   .then(console.log)
