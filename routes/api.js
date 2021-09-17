@@ -34,7 +34,7 @@ router.post('/newsletter', function(req,res,next){
         email: req.body.email
     };
     console.log(subscribingUser)
-    run(subscribingUser);
+    //run(subscribingUser);
 
     User.create(req.body)
     .then(user => res.send(user))
