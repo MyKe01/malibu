@@ -1,5 +1,7 @@
 You have to add in file ".env" your global names as server address or api key.
 
+[npm install]
+
 With the command : "node ./index.js" 
 the server will start to listen to requests.
 
