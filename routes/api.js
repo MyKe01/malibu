@@ -28,19 +28,19 @@ async function run(subscribingUser) {
 
 //add new receiver  to the db
 router.post('/newsletter', function(req,res,next){
-    var subscribingUser = {
-        firstName: req.body.name,
-        lastName: req.body.surname,
-        email: req.body.email
-    };
-    console.log(subscribingUser)
-    //run(subscribingUser);
+  var subscribingUser = {
+      firstName: req.body.name,
+      lastName: req.body.surname,
+      email: req.body.email
+  };
+  console.log(subscribingUser)
 
-    User.create(req.body)
-    .then(user => res.send(user))
-    .catch(next);
-    
-    //update mailchimp list
+  //update mailchimp list
+  run(subscribingUser);
+
+  User.create(req.body)
+  .then(user => res.send(user))
+  .catch(next);
 });
 
 module.exports = router;
