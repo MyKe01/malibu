@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 require('dotenv').config()
 
@@ -12,7 +11,11 @@ mongoose.Promise = global.Promise; //beacuse it's deprecated
 
 app.use(express.static('public'));
 
-app.use(bodyParser.json());
+app.use(express.json());
+
+app.use(express.urlencoded({
+    extended: true
+}))
 
 //initialize routes
 app.use('/api', require('./routes/api'));
