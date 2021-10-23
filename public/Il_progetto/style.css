@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    
   }
   
   body{
@@ -138,7 +139,7 @@
   
   .title{
     color:#fff;
-    font-size: 4em;
+    font-size: 6em;
     text-transform: uppercase;
     letter-spacing: 5px;
   }
@@ -166,7 +167,7 @@
   }
   
   .message{
-    font-size: 1.1em;
+    font-size: 3.5em;
     letter-spacing: 0.5px;
     margin-bottom: 6px;
   }
