@@ -3,7 +3,6 @@
   box-sizing: border-box;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  color: #fff;
 }
 
 body{
@@ -74,6 +73,7 @@ header li:first-child{
 }
 
 header section a{
+  color: #fff;
   cursor: pointer;
   text-decoration: none;
 }
@@ -108,7 +108,7 @@ header li a:hover{
 }
 
 .title{
-  color:#fff;
+  color:#000;
   font-size: 4em;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -203,6 +203,11 @@ header li a:hover{
     margin-top: 160px;
   }
 }
+
+.policy{
+  color: #fff;
+}
+
 .wrapper{
   padding: 30px;
   max-width: 400px;
@@ -322,6 +327,7 @@ form .btn input{
 }
 
 .text{
+  color: #fff;
   font-size: 15px;
 }
 
@@ -348,6 +354,7 @@ footer{
 }
 
 footer a{
+  color: #000;
   text-decoration: none;
   width: 54px;
   height: 54px;
