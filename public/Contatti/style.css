@@ -3,7 +3,6 @@
     box-sizing: border-box;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
   }
   
   body{
@@ -137,7 +136,7 @@
   }
   
   .title{
-    color:#fff;
+    color:#000;
     font-size: 4em;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -178,6 +177,7 @@
   }
   
   .icone{
+    
     position: static;
     justify-content: center;
     font-size: 1.3em;
@@ -190,6 +190,7 @@
   }
   
   .icone a{
+    color: #000;
     text-decoration: none;
     display: flex;
     height: 45px;
@@ -223,6 +224,7 @@
   }
   
   footer a{
+    color: #fff;
     text-decoration: none;
     width: 54px;
     height: 54px;
