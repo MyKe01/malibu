@@ -2,8 +2,7 @@ const form = document.querySelector('#newsletter');
 const submit = document.querySelector('#submit');
 
 function ValidateEmail(mail){
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
-  {
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
     return (true);
   }
     alert("You have entered an invalid email address!");
@@ -12,15 +11,14 @@ function ValidateEmail(mail){
 
 submit.addEventListener('click', function(e){ 
   var dict = {};
-  const mail = document.querySelector('#mail');
+  const mail = document.querySelector('#email').value;
 
   for (var [key, value] of new FormData(form).entries()) { 
     dict[`${key}`] = `${value}`;
   }
-  if(!ValidateEmail(mail)){
-    return res.status = 422;
-  }
-  e.preventDefault();
+  console.log(mail);
+  if(ValidateEmail(mail)){
+    e.preventDefault();
 
   fetch(`http://localhost:4000/api/newsletter`, {
     method : 'POST',
@@ -43,5 +41,5 @@ submit.addEventListener('click', function(e){
   })
   .then(console.log)
   .catch(console.log)
+  }
 })
-
