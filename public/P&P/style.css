@@ -126,6 +126,10 @@ header li a:hover{
   border-radius: 20px;
 }
 
+li::marker{
+  text-indent: 30px !important;
+
+}
 
 .spazio{
   margin: 5px auto;
