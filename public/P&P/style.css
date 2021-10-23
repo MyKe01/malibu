@@ -75,6 +75,7 @@ header li:first-child{
 header section a{
   cursor: pointer;
   text-decoration: none;
+  color: #fff;
 }
 
 header li a{
@@ -144,7 +145,7 @@ li::marker{
 }
 
 .title{
-  color:#000;
+  color:#424242;
   font-size: 4em;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -217,6 +218,7 @@ li::marker{
       align-items: center;
       border-color: transparent;
       transition: border-color 0.3s;
+      color: #fff;
     }
     
     footer a:hover{
