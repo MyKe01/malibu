@@ -1,5 +1,6 @@
 const express = require('express');
-const User = require('../models/newsletter');
+//db not necessary at the moment
+//const User = require('../models/newsletter'); 
 const router = express.Router();
 
 require('dotenv').config()
@@ -38,9 +39,11 @@ router.post('/newsletter', function(req,res,next){
   //update mailchimp list
   run(subscribingUser);
 
-  User.create(req.body)
+//db not necessary at the moment
+/*  User.create(req.body)
   .then(user => res.send(user))
   .catch(next);
+*/
 });
 
 module.exports = router;
