@@ -6,9 +6,8 @@ require('dotenv').config()
 const app = express();
 
 //connect to mongodb
-//db not necessary at the moment
-//mongoose.connect(`mongodb://${process.env.DB_ADDRESS}/modelist`)
-//mongoose.Promise = global.Promise; //beacuse it's deprecated
+mongoose.connect(`mongodb://${process.env.DB_ADDRESS}/modelist`)
+mongoose.Promise = global.Promise; //beacuse it's deprecated
 
 app.use(express.static('public'));
 
