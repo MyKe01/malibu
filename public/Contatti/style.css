@@ -5,6 +5,13 @@
     font-family: 'Roboto', sans-serif;
   }
   
+
+  .header img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+  }
   body{
     /*background: url(../img/bg-img.png) no-repeat center;*/
     background-size: cover;
