@@ -40,11 +40,13 @@ router.post('/newsletter', function(req,res,next){
   console.log(subscribingUser)
 
   //update mailchimp list
-  run(subscribingUser);
-
-  User.create(req.body)
+  run(subscribingUser)
   .then(user => res.send(user))
   .catch(next);
+
+  /*User.create(req.body)
+  .then(user => res.send(user))
+  .catch(next);*/
 });
 
 module.exports = router;
