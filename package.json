@@ -1,7 +1,7 @@
 {
   "name": "modelist_js",
   "version": "1.0.0",
-  "description": "",
+  "description": "You have to add in file \".env\" your global names as server address or api key.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +17,14 @@
     "http": "0.0.1-security",
     "mongoose": "^6.0.4",
     "node-fetch": "^3.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyKe01/malibu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MyKe01/malibu/issues"
+  },
+  "homepage": "https://github.com/MyKe01/malibu#readme"
 }
